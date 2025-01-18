@@ -1,0 +1,4 @@
+        === Brainfuck Compiler ===
+
+        What it says on the tin, `make` to build.
+        `bfc --help` for help.
