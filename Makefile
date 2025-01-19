@@ -12,6 +12,7 @@ OFLAG  ?= -o
 all: build/bfc
 
 build/bfc: build/main.o build/lex.o build/parse.o build/compile.o
+	[ -d build ] || mkdir build
 	$(LD) $(LFLAGS) $(OFLAG) $@ $^
 
 build/main.o: src/main.c
